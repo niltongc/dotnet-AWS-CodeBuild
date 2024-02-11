@@ -1,0 +1,11 @@
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/CICDAWS
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/appsettings.Development.json
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/appsettings.json
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/CICDAWS.dll
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/CICDAWS.deps.json
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/CICDAWS.runtimeconfig.json
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/CICDAWS.pdb
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/Microsoft.OpenApi.dll
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/Swashbuckle.AspNetCore.Swagger.dll
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/nilton/Documentos/course/Udemy/CICDAWS/output/Swashbuckle.AspNetCore.SwaggerUI.dll

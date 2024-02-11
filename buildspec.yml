@@ -1,8 +1,51 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      # Optional: Any installation commands here.
+  pre_build:
+    commands:
+      # Optional: Commands to run before build, like restoring dependencies.
+      - echo Restore started on `date`
+      - dotnet restore CICDAWS.sln
   build:
     commands:
+      - echo Build started on `date`
       - dotnet --list-sdks
-      - dotnet restore CICDAWS.sln
-      - dotnet build CICDAWS.sln
+      - dotnet build CICDAWS.sln --configuration Release
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Publish started on `date`
+      # Publish your project to a directory named 'publish'
+      - dotnet publish CICDAWS.sln --configuration Release --output ./publish
+      # Optional: Run any tests if necessary
+      - echo Copying files to the artifacts directory
+      # Assuming you wish to package everything in the publish directory
+      - cp -r ./publish $CODEBUILD_SRC_DIR/artifacts 
+      - echo Publish completed on `date`
+
+artifacts:
+  files:
+    - './output/*' # This would include all files in the artifact directory
+  discard-paths: yes
+  base-directory: 'devbuilds' # Replace with your artifacts directory
+
+# If you have specific files to exclude from artifacts, use 'exclude-paths'
+# exclude-paths:
+#   - '**/*.log'
+
+# Specify the bucket name and the path where you want to store the artifacts
+# Make sure the specified S3 bucket has the necessary permissions set
+# Uncomment and specify your S3 bucket and optional prefix
+# artifact-bucket:
+#   name: 'your-s3-bucket-name'
+#   packaging: 'zip'
+#   path: 'optional-prefix-path'
+#   namespace-type: 'BUILD_ID'
+
+# cache:
+#   paths:
+#     # Specify cache paths if needed, for example:
+#     - '/root/.nuget/packages/**/*'
