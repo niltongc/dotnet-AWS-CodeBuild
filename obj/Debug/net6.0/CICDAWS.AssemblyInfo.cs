@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CICDAWS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17650694b03f9d892743b4018cc237027169935a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+403772b434b945003cc4c8a6975aadd8902b8ff8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CICDAWS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CICDAWS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
