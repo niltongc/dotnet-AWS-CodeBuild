@@ -28,9 +28,9 @@ phases:
 
 artifacts:
   files:
-    - './output/*' # This would include all files in the artifact directory
+    - 'artifacts/**/*' # This would include all files in the artifact directory
   discard-paths: yes
-  base-directory: 'devbuilds' # Replace with your artifacts directory
+  base-directory: 'artifacts' # Replace with your artifacts directory
 
 # If you have specific files to exclude from artifacts, use 'exclude-paths'
 # exclude-paths:
