@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      # Any installation commands here
+      # none
   pre_build:
     commands:
       - echo Restore started on `date`
@@ -24,17 +24,7 @@ phases:
 
 artifacts:
   files:
-    - '**/*' # This includes all files in the specified 'base-directory'
+    - '**/*' 
   discard-paths: yes
-  base-directory: 'artifacts' # Ensure this matches the directory where files are being copied
+  base-directory: 'artifacts' 
 
-# Uncomment the following when the S3 bucket details are to be used:
-# artifact-bucket:
-#   name: 'your-s3-bucket-name'
-#   packaging: 'zip'
-#   path: 'devbuilds' # Use the 'devbuilds' directory inside your S3 bucket for the artifacts
-#   namespace-type: 'BUILD_ID'
-
-# cache:
-#   paths:
-#     - '/root/.nuget/packages/**/*'
