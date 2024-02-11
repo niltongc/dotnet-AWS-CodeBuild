@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - dotnet restore CICDAWS.sln
+      - dotnet build CICDAWS.sln
