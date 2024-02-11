@@ -1,0 +1,7 @@
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.csproj.AssemblyReference.cache
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.GeneratedMSBuildEditorConfig.editorconfig
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.AssemblyInfoInputs.cache
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.AssemblyInfo.cs
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.csproj.CoreCompileInputs.cache
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.MvcApplicationPartsAssemblyInfo.cs
+/home/nilton/Documentos/course/Udemy/CICDAWS/obj/Debug/net6.0/CICDAWS.MvcApplicationPartsAssemblyInfo.cache
