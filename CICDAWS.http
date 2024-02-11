@@ -1,0 +1,6 @@
+@CICDAWS_HostAddress = http://localhost:5017
+
+GET {{CICDAWS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
